@@ -19,7 +19,10 @@ function createCells(size){
         gridContainer.appendChild(cell);
     };
 };
+//call function
 createCells(16);
+
+
 
 function getGridCellSize(size){
     return 700 / size + "px";
