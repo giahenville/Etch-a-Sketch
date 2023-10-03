@@ -1,4 +1,9 @@
 const gridContainer = document.getElementById("gridContainer");
+const blackBtn = document.createElement("button");
+const shadingBtn = document.createElement("button");
+const rgbBtn = document.createElement("button");
+const buttonsContainer = document.querySelector("buttonsContainer");
+
 
 function createCells(size){
     gridContainer.style.setProperty("--grid-rows", size);
