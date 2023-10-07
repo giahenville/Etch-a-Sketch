@@ -2,7 +2,9 @@ const gridContainer = document.getElementById("gridContainer");
 const penBtn = document.getElementById("penBtn"); //works but set default color to black
 const shadingBtn = document.getElementById("shadingBtn"); 
 const colorfulBtn = document.getElementById("colorfulBtn"); 
-const eraserBtn = document.getElementById("eraserBtn"); 
+const eraserBtn = document.getElementById("eraserBtn");
+const clearBtn =  document.getElementById("clearBtn");
+const gridSizeBtn = document.getElementById("gridSizeBtn");
 const buttonsContainer = document.getElementById("buttonsContainer");
 
 
@@ -80,6 +82,14 @@ eraserBtn.addEventListener("click", () => {
             cell.style.backgroundColor = null;
         });
     });
+});
+
+
+clearBtn.addEventListener("click", () => {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach(cell => {
+        cell.style.backgroundColor = null;
+        }); 
 });
 
 
