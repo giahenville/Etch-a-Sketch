@@ -3,7 +3,7 @@ This is my version of the Etch-a-Sketch project for The Odin Project. I hope you
 
 ## Description:
 The user can draw on a canvas in the browser by moving their mouse over the grid. This is currently only implemented through the web browser.
-![Alt text](/etch-a-sketch.png)
+ <img src="./etch-a-sketch.png" width="50" height="auto"> 
 
 ## Features:
 * Change pen color using color picker
