@@ -4,16 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="title">
-        Etch-a-Sketch
-    </div>
-    <div id = "gridContainer">
 
+<body>
+    <div class="title">Etch-a-Sketch</div>
+    <div class="main">
+        <div id = "gridContainer"></div>
+        <div id="buttonsContainer">
+            <div id ="colorsContainer">
+                <button id="penBtn" class="button" type="button">Pen Color
+                    <input type="color" id="colorPicker">
+                </button>
+                <button id="shadingBtn" class="button" type="button">Shading</button>
+                <button id="colorfulBtn" class="button" type="button">Colorful</button>
+            </div>
+            <div id="editsContainer">
+                <p class = "slider">Grid Size:<input type='range' id = "sizeSlider" min="16" max="100" value="16"></p>
+                <div id="slider"></div>
+                <button id="eraserBtn" class="button" type="button">Eraser</button>
+                <button id ="clearBtn" class="button">Clear</button>  
+            </div>
+        </div>
     </div>
-    <div id="buttonsContainer"></div>
     <script src="script.js"></script>
 </body>
 </html>
