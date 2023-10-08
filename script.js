@@ -1,5 +1,5 @@
 const gridContainer = document.getElementById("gridContainer");
-const penBtn = document.getElementById("penBtn"); //works but set default color to black
+const penBtn = document.getElementById("penBtn"); 
 const shadingBtn = document.getElementById("shadingBtn"); 
 const colorfulBtn = document.getElementById("colorfulBtn"); 
 const eraserBtn = document.getElementById("eraserBtn");
@@ -14,7 +14,7 @@ function calcGridCellSize(size){
 
 function createCells(size){
      // Calculate the cell size based on the container's width and the number of rows/columns
-     const cellSize = calcGridCellSize(size);
+    const cellSize = calcGridCellSize(size);
 
     gridContainer.style.setProperty("--grid-rows", size);
     gridContainer.style.setProperty("--grid-cols", size);
@@ -24,11 +24,11 @@ function createCells(size){
     gridContainer.innerHTML = " "; //clears existing cells
 
      // Calculate the maximum number of cells that can fit in the container
-     const containerWidth = gridContainer.offsetWidth;
-     const maxCols = Math.floor(containerWidth / parseFloat(cellSize));
+    const containerWidth = gridContainer.offsetWidth;
+    const maxCols = Math.floor(containerWidth / parseFloat(cellSize));
  
      // Limit the number of columns to fit inside the container
-     const actualCols = Math.min(size, maxCols);
+    const actualCols = Math.min(size, maxCols);
 
     for(let i = 0; i < (size * size); i++){
         let cell = document.createElement("div");
@@ -61,7 +61,6 @@ penBtn.addEventListener("click", () => {
     });
 });
 
-
 shadingBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach(cell => {
@@ -77,7 +76,6 @@ shadingBtn.addEventListener("click", () => {
         });
     });
 });
-
 
 function getRandomNum(min, max){
     return Math.floor(Math.random() * (max - min) + min);
@@ -95,7 +93,6 @@ colorfulBtn.addEventListener("click", () => {
     });
 });
 
-
 eraserBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach(cell => {
@@ -104,7 +101,6 @@ eraserBtn.addEventListener("click", () => {
         });
     });
 });
-
 
 clearBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
