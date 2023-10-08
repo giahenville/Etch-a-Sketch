@@ -3,16 +3,124 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Palatino, "URW Palladio L", serif;
+    background-color: rgba(246, 232, 232, 0.963);
+    color: #3C3C3C;
+    font-size: 30px;
 }
 
 .title{
-    font-size: 50px;;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 15px;
 }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #191e1e;
+    border-radius: 50px;
+    background-color: rgb(224, 224, 224);
+    padding: 60px 50px;
+    box-shadow: 25px 18px #858484b4;
+}
+
+.button{
+    font-size: 40px;
+    font-family: Palatino, "URW Palladio L", serif;
+    color:rgb(235, 239, 243);
+    padding: 10px 0px;
+    margin: 10px 3px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#penBtn{
+    cursor: auto;
+    background-color: rgb(126, 139, 154);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shadingBtn{
+    background-color: rgb(78, 87, 96);
+}
+
+#colorfulBtn{
+    background-color: rgb(179, 135, 152);
+} 
+
+#eraserBtn{
+    background-color: rgb(87, 104, 123);
+    margin-top: 20px; 
+}
+
+#clearBtn{
+    background-color: rgb(119, 165, 175);
+}
+
+#colorPicker{
+    cursor: pointer;
+}
+
+#sizeSlider{
+    cursor: pointer;
+}
+
+#buttonsContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: flex-end;
+}
+
+#colorsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 40%;
+}
+
+#editsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(16, 15, 15);
+    border-radius: 10px;
+    background-color: rgb(235, 239, 243);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Palatino, "URW Palladio L", serif;
+    color:rgb(67, 68, 69);
+    padding: 15px 50%;
+    margin: 10px 3px;
+    border-radius: 10px;
+    margin: 0;
+}
+
 #gridContainer{
     display: grid;
     grid-template-rows: repeat(var(--grid-rows), var(--grid-cell-size));
     grid-template-columns: repeat(var(--grid-cols),  var(--grid-cell-size));
-    border: 2px solid #0e1111;
+    border-width: 40px 60px;
+    border-style: solid;
+    border-color: rgb(88, 97, 107);
+    background-color: rgb(235, 239, 243);
+    border-radius: 20px;
+    box-shadow: 15px 5px #efeded, 18px 15px #85848477 inset;
 }
+
 
 
