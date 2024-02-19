@@ -1,5 +1,5 @@
 # Etch-a-Sketch
-This is my version of the Etch-a-Sketch project for The Odin Project. I hope you enjoy!
+This is my version of the Etch-a-Sketch project for The Odin Project. Try it [here](https://giahenville.github.io/Etch-a-Sketch/) I hope you enjoy!
 
 ## Description:
 The user can draw on a canvas in the browser by moving their mouse over the grid. This is currently only implemented through the web browser. 
