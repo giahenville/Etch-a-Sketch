@@ -4,7 +4,8 @@ This is my version of the Etch-a-Sketch project for The Odin Project. Try it [he
 
 ## Description:
 
-The user can draw on a canvas in the browser by moving their mouse over the grid. This is currently only implemented through the web browser. 
+The user can draw on a canvas in the browser by moving their mouse over the grid. This is currently only implemented through the web browser.
+
  <img src="./etch-a-sketch.png" width="300" height="auto"> 
 
 ## Features:
